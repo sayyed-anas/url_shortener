@@ -7,9 +7,12 @@ function Home() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await axios.post("http://localhost:5000/api/shorten", {
-      longUrl,
-    });
+    const res = await axios.post(
+      "https://url-shortener-1-4d1j.onrender.com/api/shorten",
+      {
+        longUrl,
+      }
+    );
     setShortUrl(res.data.shortUrl);
   };
 
