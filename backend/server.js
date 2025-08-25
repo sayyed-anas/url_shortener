@@ -38,7 +38,7 @@ app.post("/api/shorten", async (req, res) => {
   const url = new Url({ longUrl, shortCode });
   await url.save();
 
-  res.json({ shortUrl: `http://localhost:5000/${shortCode}` });
+  res.json({ shortUrl: `https://url-shortener-2-cf78.onrender.com/${shortCode}` });
 });
 
 // GET - redirect
