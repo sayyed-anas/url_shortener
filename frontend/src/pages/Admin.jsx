@@ -57,7 +57,7 @@ function Admin() {
                   <td className="px-4 py-2 truncate max-w-xs">{url.longUrl}</td>
                   <td className="px-4 py-2">
                     <a
-                      href={`http://localhost:5000/${url.shortCode}`}
+                      href={`https://url-shortener-1-4d1j.onrender.com/${url.shortCode}`}
                       target="_blank"
                       rel="noreferrer"
                       className="text-indigo-600"
