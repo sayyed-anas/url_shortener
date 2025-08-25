@@ -7,7 +7,7 @@ function Admin() {
 
   const fetchUrls = async () => {
     setLoading(true);
-    const res = await axios.get("http://localhost:5000/api/admin/urls");
+    const res = await axios.get("https://url-shortener-1-4d1j.onrender.com/api/admin/urls");
     setUrls(res.data);
     setLoading(false);
   };
@@ -19,7 +19,7 @@ function Admin() {
   // Handle Delete
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this URL?")) {
-      await axios.delete(`http://localhost:5000/api/admin/urls/${id}`);
+      await axios.delete(`https://url-shortener-1-4d1j.onrender.com/api/admin/urls/${id}`);
       fetchUrls(); // Refresh list
     }
   };
