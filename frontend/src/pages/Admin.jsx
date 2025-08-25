@@ -62,7 +62,7 @@ function Admin() {
                       rel="noreferrer"
                       className="text-indigo-600"
                     >
-                      {`http://localhost:5000/${url.shortCode}`}
+                      {`https://url-shortener-1-4d1j.onrender.com/${url.shortCode}`}
                     </a>
                   </td>
                   <td className="px-4 py-2 text-center">{url.clicks}</td>
